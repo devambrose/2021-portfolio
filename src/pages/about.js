@@ -1,9 +1,10 @@
 import React from "react";
+import Layout from "../components/containers/layout/layout";
 
 export default ()=>{
     return (
-        <div className='app-left app-full'>
+        <Layout className='app-left app-full'>
             About the page
-        </div>
+        </Layout>
     )
 }

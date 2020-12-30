@@ -12,30 +12,47 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
 import "./styles/main.css"
 import Menu from "../menu/menu"
-import Footer from "../footer/footer"
+import Footer from "../footer/footer";
+import {TweenMax,Power3} from "gsap";
+import {getTheme,setTheme} from "../../../services/auth";
+class LayoutClass extends React.Component{
+  constructor(props){
+    super(props);
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
+    this.state={
+      theme:getTheme(),
     }
-  `)
-
+    this.changeTheme=this.changeTheme.bind(this);
+  }
+  changeTheme(){
+     const currentTheme=this.state.theme;
+     setTheme(!currentTheme);
+     this.setState({theme:!currentTheme});
+  }
+  componentDidMount(){
+    console.log(this.state.theme);
+  }
+  render(){
+    console.log(this.state.theme);
   return (
-    <>
-      <Menu siteTitle={data.site.siteMetadata?.title || `Title`}/>
-      {children}
+    <section className={(this.state.theme ? 'app-white' :'app-dark')+ " main-section"}>
+      <Menu click={this.changeTheme} theme={this.state.theme} siteTitle={'itsambrose' || `Title`}/>
+      <main>
+      {this.props.children}
+      {getTheme ? "ambrose" :"Mwangi"}
+      </main>
+      
       <Footer/>
-    </>
+    </section>
   )
+
+
+  }
 }
 
-Layout.propTypes = {
+
+LayoutClass.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default LayoutClass
