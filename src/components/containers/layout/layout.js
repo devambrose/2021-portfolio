@@ -8,8 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import "./layout.css"
+import "./styles/fnt/css/all.css"
 import "./styles/main.css"
 import Menu from "../menu/menu"
 import Footer from "../footer/footer";
@@ -30,18 +29,16 @@ class LayoutClass extends React.Component{
      this.setState({theme:!currentTheme});
   }
   componentDidMount(){
-    console.log(this.state.theme);
+    
   }
   render(){
-    console.log(this.state.theme);
+   
   return (
     <section className={(this.state.theme ? 'app-white' :'app-dark')+ " main-section"}>
       <Menu click={this.changeTheme} theme={this.state.theme} siteTitle={'itsambrose' || `Title`}/>
       <main>
       {this.props.children}
-      {getTheme ? "ambrose" :"Mwangi"}
       </main>
-      
       <Footer/>
     </section>
   )

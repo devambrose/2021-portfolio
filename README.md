@@ -11,4 +11,8 @@
 </h1>
 This is project 10/100 of the 100projects100Days
 
+-Using the following Coding styles & libraries:-
+1.Sass
+2.GSAP animation library
+3.Adobe XD
 "# 2021-portfolio" 

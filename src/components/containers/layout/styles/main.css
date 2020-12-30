@@ -21,6 +21,7 @@ body {
 .app-menu a {
   text-decoration: none;
   float: left;
+  padding: 10px 3px;
 }
 
 .app-menu .menu-container {
@@ -37,6 +38,52 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.app-menu .mobile-level-section {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  place-content: center;
+}
+
+#mainsection {
+  width: 100%;
+}
+
+#mainsection .mobile-level-section {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.featured-section {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+      grid-template-columns: 30% auto;
+}
+
+.featured-section img {
+  width: 100%;
+}
+
+.featured-section h3 {
+  margin: 0px;
+  color: purple;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer img {
+  width: 20%;
+  margin: 2% 0px 2% 2%;
 }
 
 .app-full {

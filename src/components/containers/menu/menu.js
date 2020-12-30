@@ -19,7 +19,7 @@ export default class Menu extends Component{
                     <Link to={"/projects"}>My Work</Link>
                     <Link to={"/skills"}>My Skills</Link>
                     <Link to={"/hire"}>Hire Me?</Link>
-                    <div className={(this.props.theme ? " fas " :'far') +' fa-suprise'} onClick={this.props.click}>sun</div>
+                    <div style={{padding:'10px 3px'}} className={(this.props.theme ? "far" :'fas') +' fa-surprise'} onClick={this.props.click}></div>
                 </div>
             </div>
         )

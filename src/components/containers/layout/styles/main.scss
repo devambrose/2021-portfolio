@@ -16,7 +16,7 @@ body{
   a{
       text-decoration: none;
       float: left;
-
+      padding: 10px 3px;
   }
   .menu-container{
       width:'90%' !important;
@@ -25,6 +25,48 @@ body{
       flex-flow: row wrap;
       justify-content: space-evenly;
   }
+  .logo{
+     
+  }
+  
+  .mobile-level-section{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    place-content: center;
+}
+}
+#mainsection{
+    width:100%;
+
+    .mobile-level-section{
+        display: grid;
+        place-items: center;
+        place-content: center;
+
+    }
+
+}
+.featured-section{
+    width:100%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    img{
+        width: 100%;
+    }
+    h3{
+        margin:0px;
+        color:purple;
+    }   
+}
+.footer{
+    width:100%;
+
+    img{
+        width: 20%;
+        margin:2% 0px 2% 2%;
+    }
 }
 .app-full{
     width:100%;
