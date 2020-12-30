@@ -99,6 +99,9 @@ body {
 
 .projects {
   width: 100%;
+  margin-top: 3%;
+  float: left;
+  padding: 1%;
 }
 
 .projects .container {
@@ -136,6 +139,28 @@ body {
 
 .projects img {
   width: 30%;
+  float: left;
+}
+
+.development {
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+.development h5 {
+  margin: 0px;
+}
+
+.development .project-simple {
+  float: left;
+  width: 20%;
+  margin: 0px 2%;
+}
+
+.development .project-simple h6 {
+  font-size: medium;
+  margin: 0px;
 }
 
 .footer {
@@ -165,5 +190,9 @@ body {
 
 .app-dark main {
   color: white;
+}
+
+.app-dark .projects span div {
+  color: purple;
 }
 /*# sourceMappingURL=main.css.map */
