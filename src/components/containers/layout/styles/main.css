@@ -5,6 +5,25 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+#mainsection {
+  width: 100vw;
+  min-height: 40vh;
+  float: left;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainsection .live-pointer {
+  background-color: white;
+  width: 15px;
+  height: 50px;
+  border-radius: 6px;
+}
+
 .main-section {
   width: 100vw;
   min-height: 100vh;

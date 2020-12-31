@@ -16,6 +16,10 @@ export default ()=>{
                 <h3>Create Beaufitully Crafted Systems and websites </h3> 
                 <span>&#x1F447; </span>
                 <p>meet devAmbrose</p>
+                <span className='live-pointer'>
+                    <div>jams</div>
+                </span>
+
                 </div>
                 <div className='pc-level-section'>
                    

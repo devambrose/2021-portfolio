@@ -4,6 +4,21 @@ body{
     margin:0px;
     font-family: 'Nunito', sans-serif;
 }
+#mainsection{
+    width:100vw;
+    min-height: 40vh;
+    float: left;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+
+    .live-pointer{
+        background-color: white;
+        width:15px;
+        height: 50px;
+        border-radius: 6px;
+    }
+}
 .main-section{
     width:100vw;
     min-height: 100vh;
