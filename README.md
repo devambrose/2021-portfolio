@@ -9,10 +9,10 @@
   Gatsby's default starter <br/>
   
 </h1>
-This is project 10/100 of the 100projects100Days
+This is project 10/100 of the 100projects100Days <br/><br/>
 
--Using the following Coding styles & libraries:-
-1.Sass
-2.GSAP animation library
-3.Adobe XD
-"# 2021-portfolio" 
+-Using the following Coding styles & libraries:-<br/>
+1.Sass<br/>
+2.GSAP animation library<br/>
+3.Adobe XD<br/>
+"# 2021-portfolio" <br/>
