@@ -1,8 +1,7 @@
 import React from "react";
 import LayoutClass from "../components/containers/layout/layout";
 
-export default ()=>{
-    return (
+export default ()=>(
         <LayoutClass className='app-left app-full'>
             {
                 [
@@ -21,4 +20,3 @@ export default ()=>{
             }
         </LayoutClass>
     )
-}

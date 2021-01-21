@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "./styles/fnt/css/all.css"
+import {Helmet} from "react-helmet";
 import "./styles/main.css"
 import Menu from "../menu/menu"
 import Footer from "../footer/footer";
@@ -35,6 +36,11 @@ class LayoutClass extends React.Component{
    
   return (
     <section className={(this.state.theme ? 'app-white' :'app-dark')+ " main-section"}>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Ambrose Portfolio</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Menu click={this.changeTheme} theme={this.state.theme} siteTitle={'itsambrose' || `Title`}/>
       <main>
       {this.props.children}
