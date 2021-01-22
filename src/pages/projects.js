@@ -39,9 +39,12 @@ function ExtraProjects(){
     return (
         <>
             {
-                [ {name:"AdofMouth",title:"Online service selling Platform",description:"This is an online webs service where customers and seelers have a virual platform that allow selling of services for the african market. ",
+                [ {name:"sequence customs",title:"Car Garage Management Platform",description:"This is an service that helps in garage ,stock and information management ",
+                languages:['REACT Js','google api','SCSS','MPESA API','STRIPE','GIT'],link:Billing},{name:"AdofMouth",title:"Online service selling Platform",description:"This is an online webs service where customers and seelers have a virual platform that allow selling of services for the african market. ",
                 languages:['Jquery Js','MariaDB','PHP',"Bootstrap",'SCSS','GCP','MPESA API','VISA API','STRIPE','GIT'],link:Billing},
                 {name:"steastafrica",title:"Speed Govenor and Car tracking system",description:"This is an online service that allow car owners to enhance responsible driving and also tract their cars in realtime. ",
+                languages:['REACT Js','google api','SCSS','MPESA API','STRIPE','GIT'],link:Billing},
+                {name:"cipher",title:"Cipher 001",description:"This is an terminal based application who's basis was to enhance my password encrption skills. ",
                 languages:['REACT Js','google api','SCSS','MPESA API','STRIPE','GIT'],link:Billing}
             ].map((args,key)=> <ProjectComponent key={key} {...args} Billing={Billing}/>)
             }
