@@ -97,6 +97,28 @@ body{
     padding-top: 10%;
     margin-bottom: 3%;
 }
+.services{
+    display:grid;
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0px 0px 4px #bbb;
+    margin:5% 10%;
+
+    i{
+        font-size: 30px;
+        padding:3px;
+    }
+    h5{
+        margin: 0px;
+        color:#ec5d60;
+        padding:3%;
+    }
+    p{
+        font-weight: lighter;
+    }
+}
 .projects{
     width:100%;
     margin-top:3%;

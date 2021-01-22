@@ -124,6 +124,35 @@ body {
   margin: 0px !important;
 }
 
+.services {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-content: center;
+  text-align: center;
+  width: 80%;
+  -webkit-box-shadow: 0px 0px 4px #bbb;
+          box-shadow: 0px 0px 4px #bbb;
+  margin: 5% 10%;
+}
+
+.services i {
+  font-size: 30px;
+  padding: 3px;
+}
+
+.services h5 {
+  margin: 0px;
+  color: #ec5d60;
+  padding: 3%;
+}
+
+.services p {
+  font-weight: lighter;
+}
+
 .projects {
   width: 100%;
   margin-top: 3%;
