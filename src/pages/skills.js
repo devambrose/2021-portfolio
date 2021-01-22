@@ -2,21 +2,31 @@ import React from "react";
 import LayoutClass from "../components/containers/layout/layout";
 
 export default ()=>(
-        <LayoutClass className='app-left app-full'>
+        <LayoutClass className='app-left app-full' title={"My Skills"}>
             {
                 [
-                    {name:'Main Stacks',arr:["fab fa-php","fab fa-node-js"]},
-                    {name:'Frontend Development',arr:[]},
-                    {name:'Backend Development',arr:[]},
-                    {name:'Datases',arr:[]},
-                    {name:'Main Stacks',arr:[]},
+                    {name:'Main Stacks',arr:["PHP","NODE JS","PYTHON","C++",'KOTLIN |ANDROID']},
+                    {name:'WEB CSR',arr:["REACT JS","JQUERY JS","GATSBY JS"]},
+                    {name:'WEB SSR',arr:["PHP","NODE JS"]},
+                    {name:'ANDROID',arr:["KOTLIN","JAVA"]},
+                    {name:'DATABASES',arr:['POSTGRESQL',"MONGO","SQLITE","MARIA DB","SQL"]},
+                    {name:'SOURCE CONTROL',arr:['GIT','DOCKER','KUBERNETES']},
+                    {name:'CURRENTLY PURSUING',arr:['HADOOP DATABASES','EXPRESS JS','REACT NATIVE']}
                 ].map( ({name,arr,codes})=>(
-                    <fieldset style={{borderRadius:'5px',margin:'2% 1%',width:'92%'}}>
+                    <fieldset className={'code-base'} style={{borderRadius:'5px',margin:'4% 1%',width:'92%',display:'flex'}}>
                         <legend>{name}</legend>
-                        {arr.map(iclass=><i className={iclass} style={{fontSize:'34px',margin:'0px 1%'}}></i>)}
+                        {arr.map(tag=><CodeBase title={tag}/>)}
 
                     </fieldset>
                    ))
             }
         </LayoutClass>
     )
+
+function CodeBase(props){
+    return (
+        <div className={'app-padding-big app-border app-round codes app-left'} style={{marginLeft:'10px',marginRight:'10px'}}>
+            {props.title}
+        </div>
+    )
+}

@@ -5,7 +5,7 @@ import System from "../images/systems.png"
 import Website from "../images/website.png"
 import Android from "../images/android.png"
 import Movie from "../images/movie.png"
-import Billing from "../images/billing.png"
+import Billing from "../images/billing.png";
 
 import { Link } from "gatsby"
 export default ()=>{
@@ -17,7 +17,7 @@ export default ()=>{
                 <span>&#x1F447; </span>
                 <p>meet devAmbrose</p>
                 <span className='live-pointer'>
-                    <div>jams</div>
+                    <div></div>
                 </span>
 
                 </div>
@@ -73,29 +73,11 @@ export default ()=>{
                     <div>REST API'S</div>
                     <div>GCP</div>
                 </span>
-                <Link>Read More </Link>
+                <Link to={'/'}>Read More </Link>
                 </div>
                 <img src={Billing}/>
             </div>
-            <div className='projects'>
-                <img src={Movie}/>
-                <div className={'container'}>
-                <small>Movie Flow</small>
-                <h3>Movie search engine</h3>
-                <p>This is an online movie search engine that keeps you up to speed with 
-                    the latest and trending movies.Also recommends movies according to your search history.
-                </p>
-                <span>
-                    <div>Gatsby (React) JS</div>
-                    <div>SASS</div>
-                    <div>DOCKER</div>
-                    <div>REST API'S</div>
-                    <div>GCP</div>
-                </span>
-                <Link>Read More </Link>
-                </div>
-                
-            </div>
+            
             <h3 style={{textAlign:'center',width:'100%',padding:'1% 0px',color:'purple',margin:'5% 0px',float:'left'}}>Projects :Under development</h3>            
             
             <div className='development'>
@@ -107,7 +89,7 @@ export default ()=>{
                         {name:'Baby Shop Manager',short:'Managing my sisters baby shop application book-keeping & inventory'},
                         {name:'Green Trader Shop',short :'Working on the idea'}
                 ].map( ({name,short},key)=>(
-                    <div className='project-simple'>
+                    <div className='project-simple' key={key}>
                         <h6>{name}</h6>
                         <small>{short}</small>
                     </div>
@@ -118,3 +100,5 @@ export default ()=>{
             </>
         )
     }
+
+   

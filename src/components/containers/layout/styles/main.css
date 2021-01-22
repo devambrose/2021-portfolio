@@ -18,10 +18,18 @@ body {
 }
 
 #mainsection .live-pointer {
-  background-color: white;
   width: 15px;
   height: 50px;
   border-radius: 6px;
+  position: relative;
+}
+
+#mainsection .live-pointer div {
+  padding: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 7%;
+  left: 8%;
 }
 
 .main-section {
@@ -184,15 +192,52 @@ body {
 
 .footer {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footer img {
-  width: 20%;
+  width: 16%;
   margin: 2% 0px 2% 2%;
 }
 
 .app-full {
   width: 100%;
+}
+
+.code-base {
+  border: 0px;
+  border-top: 1px solid #ffffff;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.code-base .codes {
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-top: 4px;
+}
+
+.app-white .codes {
+  background: lightgray;
+}
+
+.app-white .live-pointer {
+  background-color: purple !important;
+}
+
+.app-white .live-pointer div {
+  background-color: #ffffff;
 }
 
 .app-dark {
@@ -213,5 +258,17 @@ body {
 
 .app-dark .projects span div {
   color: purple;
+}
+
+.app-dark .codes {
+  background: purple;
+}
+
+.app-dark .live-pointer {
+  background-color: white;
+}
+
+.app-dark .live-pointer div {
+  background-color: purple;
 }
 /*# sourceMappingURL=main.css.map */

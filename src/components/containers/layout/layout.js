@@ -38,8 +38,8 @@ class LayoutClass extends React.Component{
     <section className={(this.state.theme ? 'app-white' :'app-dark')+ " main-section"}>
       <Helmet>
                 <meta charSet="utf-8" />
-                <title>Ambrose Portfolio</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                <title>Ambrose Portfolio | {this.props.title}</title>
+                <link rel="canonical" href="http://itsambrose.space" />
       </Helmet>
       <Menu click={this.changeTheme} theme={this.state.theme} siteTitle={'itsambrose' || `Title`}/>
       <main>

@@ -4,8 +4,7 @@ import SEO from "../components/seo"
 import Content from "../components/container"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" description='devambrose :this is my portfolio' />
+  <Layout title={'Home'}>
     <Content/>
   </Layout>
 )
