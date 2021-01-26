@@ -18,7 +18,7 @@ export default ()=>{
         languages:['PHP','GCP',"AJAX","jQUERY js","CSS","POSGRESQL","SQL"],link:Billing,url:'http://www.manpro.co.ke'},
         {name:"24hour tax",title:"Online Tax management Platform",description:"This is both a installable software and an online platform that allows both users and companies to manage their taxes for both online and offline,based on the US markets",
         languages:['PHP','AWS',"C++","REST API","ELECTRON JS","SCSS","AJAX","POSGRESQL","SQL"],link:Billing,url:'http://www.24hourtax.tech'}
-        ].map( (args,key)=>( <ProjectComponent key={key} {...args} Billing={Billing}/>))
+        ].map( (args,key)=>( <ProjectComponent key={key} position={key} {...args} Billing={Billing}/>))
             }
             { !ishidden ?
             <div className='' style={{textAlign:'center',width:'100%',cursor:'pointer',padding:'1%',background:'lightgrey',float:'left',margin:'1% 0px',display:'grid',position:'relative',placeItems:'center'}}>
@@ -45,7 +45,7 @@ function ExtraProjects(){
                 {name:"steastafrica",title:"Speed Govenor and Car tracking system",description:"This is an online service that allow car owners to enhance responsible driving and also tract their cars in realtime. ",
                 languages:['REACT Js','google api','SCSS','MPESA API','STRIPE','GIT'],link:Billing},
                 {name:"cipher",title:"Cipher 001",description:"This is an terminal based application who's basis was to enhance my password encrption skills. ",
-                languages:['REACT Js','google api','SCSS','MPESA API','STRIPE','GIT'],link:Billing}
+                languages:['Python','GIT'],link:Billing}
             ].map((args,key)=> <ProjectComponent key={key} {...args} Billing={Billing}/>)
             }
         </>

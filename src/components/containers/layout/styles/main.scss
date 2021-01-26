@@ -30,6 +30,7 @@ body{
     width:100vw;
     min-height: 100vh;
     font-size: 12px;
+    overflow: hidden;
 }
 .app-menu{
   display: grid;
@@ -235,4 +236,33 @@ body{
         }
     }
     
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 952px) {
+  
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 700px) {
+  .projects{
+      width:80%;
+      margin: 1% 10%;
+      box-shadow: 0px 0px 4px #bbb;
+    img{
+        width:20%;
+        object-fit: cover;
+    }
+  }
+  .featured-section{
+      img{
+          width: 50%;
+          margin:0px 43%;
+      }
+  }
+  .services{
+      width:45%;
+      margin:1% 2%;
+      float: left;
+  }
 }

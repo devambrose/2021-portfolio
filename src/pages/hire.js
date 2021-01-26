@@ -10,7 +10,8 @@ export default ()=>{
                     {tag:'FRONTEND CONTROLS',font:'fas fa-tools',desc:'Publish content and tweak your design without leaving the homepage'},
                     {tag:'MOBILE VERSION',font:'fas fa-mobile-alt',desc:'Gain your mobile audience with a better dedicated design'},
                     {tag:'EASY TO LAUNCH',font:'fas fa-rocket',desc:'lightweight applications ,fast to load even in low network areas.'},
-                    {tag:'LOVE & COFFE',font:'fas fa-coffee',desc:'built with so much commitment,love and coffe.Always deliverd on time'}
+                    {tag:'LOVE & COFFE',font:'fas fa-coffee',desc:'built with so much commitment,love and coffe.Always deliverd on time'},
+                    {tag:'Online CV',font:'fas fa-download',desc:'review my CV online, follow me on github or connect with me on linkedin or telegram.'}
             ].map((code,key)=>(
                 <div class='app-left services'>
                     <i className={code.font}></i>

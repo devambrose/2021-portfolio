@@ -36,6 +36,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-size: 12px;
+  overflow: hidden;
 }
 
 .app-menu {
@@ -299,5 +300,30 @@ body {
 
 .app-dark .live-pointer div {
   background-color: purple;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 700px) {
+  .projects {
+    width: 80%;
+    margin: 1% 10%;
+    -webkit-box-shadow: 0px 0px 4px #bbb;
+            box-shadow: 0px 0px 4px #bbb;
+  }
+  .projects img {
+    width: 20%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .featured-section img {
+    width: 50%;
+    margin: 0px 43%;
+  }
+  .services {
+    width: 45%;
+    margin: 1% 2%;
+    float: left;
+  }
 }
 /*# sourceMappingURL=main.css.map */
