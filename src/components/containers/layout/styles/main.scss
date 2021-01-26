@@ -27,7 +27,7 @@ body{
     }
 }
 .main-section{
-    width:100vw;
+    width:100%;
     min-height: 100vh;
     font-size: 12px;
     overflow: hidden;
@@ -48,9 +48,7 @@ body{
       flex-flow: row wrap;
       justify-content: space-evenly;
   }
-  .logo{
-     
-  }
+ 
   
   .mobile-level-section{
     text-align: center;
@@ -70,6 +68,11 @@ body{
 
     }
 
+}
+.skillslayout{
+    .app-tab-hidden{
+        display: none;
+    }
 }
 .featured-section{
     width:100%;
@@ -265,4 +268,19 @@ body{
       margin:1% 2%;
       float: left;
   }
+  .skillslayout{
+      display: grid;
+      grid-template-columns: 40% auto;
+      grid-gap:2;
+    .app-tab-hidden{
+        display: block;
+    }
+}
+}
+
+.app-padding{
+    padding:4px 8px;
+}
+.app-text-green{
+    color: green;
 }

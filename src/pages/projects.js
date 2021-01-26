@@ -46,7 +46,7 @@ function ExtraProjects(){
                 languages:['REACT Js','google api','SCSS','MPESA API','STRIPE','GIT'],link:Billing},
                 {name:"cipher",title:"Cipher 001",description:"This is an terminal based application who's basis was to enhance my password encrption skills. ",
                 languages:['Python','GIT'],link:Billing}
-            ].map((args,key)=> <ProjectComponent key={key} {...args} Billing={Billing}/>)
+            ].map((args,key)=> <ProjectComponent key={key} position={key} {...args} Billing={Billing}/>)
             }
         </>
     )
