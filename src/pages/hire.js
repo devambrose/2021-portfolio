@@ -3,7 +3,26 @@ import LayoutClass from "../components/containers/layout/layout";
 
 export default ()=>{
     return (
-        <LayoutClass className='app-left app-full' title={'Hire Me?'}>
+        <LayoutClass id={'hire'} className='app-left app-full' title={'Hire Me?'}>
+            <div className='app-right app-full' id='mobile-hidden'>
+                {
+                    [
+                        {name:"Your Name or Company",id:"email"},
+                        {name:"Email Address",id:"email"},
+                        {name:"Message",id:"email",css:"200px"},
+                    ].map(({name,css})=>(
+                    <div className='app-right app-full'>
+                        <div className='app-right app-full' style={{textAlign:'center',paddingRight:'0%'}}>{name}</div>
+                        <input type='text' className='inputs app-right' style={css !==undefined ? {height:"200px",marginRight:'10%'}: {marginRight:'10%'}}/>
+                </div>
+                    ))
+                }
+                <div className='app-right app-full'>
+                    <button type='submit' aria-label="Submit" name={'messenger'} style={{marginRight:'10%'}} className='app-right'>Submit</button>
+                </div>
+                
+            </div>
+            <div className=''>
             {
                 [
                     {tag:'POWER OF SIMPLICITY',font:'fas fa-cloud-meatball',desc:'Start simple. Keep minimal. Deliver incredible!'},
@@ -20,7 +39,7 @@ export default ()=>{
             </div>
                 ) )
             }
-            
+            </div>
         </LayoutClass>
     )
 }

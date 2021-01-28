@@ -1,12 +1,11 @@
-import React,{useState,useRef} from "react";
+import React,{useState} from "react";
 import LayoutClass from "../components/containers/layout/layout";
 import Billing from "../images/billing.png"
-import {Link} from "gatsby";
 import ProjectComponent from "../components/jumbo/project-component";
 export default ()=>{
     const [ishidden,setHidden]=useState(0);
     return (
-        <LayoutClass title={'My Work'} className='app-left app-full'>
+        <LayoutClass title={'My Work'} id={'projects'} className='app-left app-full'>
             {
                 [ {name:"SPOS",title:"Supermaket point of Sale",description:"This is an instalable Supermarket sales and inventory management platform which has both online services and other addons that make it a viable product for current times. ",
             languages:['ELECTRON JS','SQL','PHP',"REST API'S",'GCP'],link:Billing},
@@ -24,7 +23,7 @@ export default ()=>{
             <div className='' style={{textAlign:'center',width:'100%',cursor:'pointer',padding:'1%',background:'lightgrey',float:'left',margin:'1% 0px',display:'grid',position:'relative',placeItems:'center'}}>
                 
                  
-                <p className='app-left app-full' onClick={()=>setHidden(ishidden+1)} style={{margin:'0px'}} >LOAD MORE</p>
+                <button className='app-left app-full' onKeyPress={()=>null} onClick={()=>setHidden(ishidden+1)} style={{margin:'0px'}} >LOAD MORE</button>
                  
                 
                 <i className='fas fa-chevron-down app-left'></i>

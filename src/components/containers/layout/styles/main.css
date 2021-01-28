@@ -224,6 +224,10 @@ body {
   margin: 0px;
 }
 
+#mobile-hidden {
+  display: none;
+}
+
 .footer {
   width: 100%;
   display: -webkit-box;
@@ -274,8 +278,18 @@ body {
   background-color: #ffffff;
 }
 
+.app-white #mobile-hidden {
+  background-image: repeating-linear-gradient(157.5deg, white 0px, white 10px, transparent 10px, transparent 11px), repeating-linear-gradient(67.5deg, white 0px, white 10px, transparent 10px, transparent 11px), -webkit-gradient(linear, left top, right top, from(#075014), to(#075014));
+  background-image: repeating-linear-gradient(157.5deg, white 0px, white 10px, transparent 10px, transparent 11px), repeating-linear-gradient(67.5deg, white 0px, white 10px, transparent 10px, transparent 11px), linear-gradient(90deg, #075014, #075014);
+}
+
 .app-dark {
   background-color: black;
+}
+
+.app-dark #mobile-hidden {
+  background-image: repeating-linear-gradient(157.5deg, black 0px, black 10px, transparent 10px, transparent 11px), repeating-linear-gradient(67.5deg, black 0px, black 10px, transparent 10px, transparent 11px), -webkit-gradient(linear, left top, right top, from(#791764), to(#791764));
+  background-image: repeating-linear-gradient(157.5deg, black 0px, black 10px, transparent 10px, transparent 11px), repeating-linear-gradient(67.5deg, black 0px, black 10px, transparent 10px, transparent 11px), linear-gradient(90deg, #791764, #791764);
 }
 
 .app-dark .app-menu {
@@ -307,6 +321,41 @@ body {
 }
 
 /* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 952px) {
+  main#projects, main#hire {
+    float: left;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 48% 48%;
+        grid-template-columns: 48% 48%;
+    grid-gap: 2;
+  }
+  main#projects .projects, main#hire .projects {
+    margin-top: 2% !important;
+  }
+  #mobile-hidden {
+    display: block !important;
+    width: 100% !important;
+  }
+  #mobile-hidden div {
+    padding: 1%;
+  }
+  #mobile-hidden .app-right {
+    float: right;
+  }
+  #mobile-hidden input {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 1% 2%;
+    width: 70%;
+  }
+  #mobile-hidden input :focus {
+    -webkit-box-shadow: 0px 0px 4px #bbb !important;
+            box-shadow: 0px 0px 4px #bbb !important;
+  }
+}
+
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (min-width: 700px) {
   .projects {

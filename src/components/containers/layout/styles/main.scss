@@ -176,6 +176,9 @@ body{
         }
     }
 }
+#mobile-hidden{
+    display: none;
+}
 .footer{
     width:100%;
     display: flex;
@@ -201,6 +204,7 @@ body{
     }
 }
 
+
 .app-white{
     .codes{
         background: lightgray;
@@ -212,10 +216,16 @@ body{
             background-color: #ffffff;
         }
     }
+    #mobile-hidden{
+        background-image: repeating-linear-gradient(157.5deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(67.5deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(131,84%,17%),hsl(131,84%,17%));
+    }
 }
 .app-dark{
     background-color: black;
 
+    #mobile-hidden{
+        background-image: repeating-linear-gradient(157.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(67.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, rgb(121,23,100),rgb(121,23,100));
+    }
     .app-menu{
         color:white;
 
@@ -244,6 +254,35 @@ body{
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (min-width: 952px) {
   
+  main#projects,main#hire{
+      float: left;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 48% 48%;
+      grid-gap: 2;
+      .projects{
+          margin-top: 2% !important;
+      }
+  }
+  #mobile-hidden{
+      display: block !important;
+      width:100% !important;
+      div{
+          padding:1%;
+      }
+      .app-right{
+          float: right;
+      }
+      input{
+          border: 1px solid #bbb;
+          border-radius: 5px;;
+          padding:1% 2%;
+          width: 70%;
+          :focus{
+              box-shadow: 0px 0px 4px #bbb !important;
+          }
+      }
+  }
 }
 
 /* On screens that are 600px or less, set the background color to olive */

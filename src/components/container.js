@@ -1,10 +1,10 @@
-import React, { Component,useRef } from "react"
+import React from "react"
 //import {TweenMax,power3} from "gsap";
 import Featured from "../images/24.png"
 import System from "../images/systems.png"
 import Website from "../images/website.png"
 import Android from "../images/android.png"
-import Movie from "../images/movie.png"
+//import Movie from "../images/movie.png"
 import Billing from "../images/billing.png";
 
 import { Link } from "gatsby"
@@ -14,7 +14,7 @@ export default ()=>{
             <div id='mainsection'>
                 <div className='mobile-level-section'>
                 <h3>Create Beaufitully Crafted Systems and websites </h3> 
-                <span>&#x1F447; </span>
+                <span role='img' aria-label='scroll expression'>&#x1F447; </span>
                 <p>meet devAmbrose</p>
                 <span className='live-pointer'>
                     <div></div>
@@ -26,7 +26,7 @@ export default ()=>{
                 </div>
             </div>
             <div className='featured-section'>
-                <img src={Featured}/>
+                <img src={Featured} alt='Featured project Container'/>
                 <div className={' '}>
                 <small>Featured Project</small>
                 <h3>24Hour tax Managemet Platform</h3>
@@ -39,21 +39,21 @@ export default ()=>{
 
             <div className='project-types'>
                 <div className='app-left'>
-                    <img src={System}/>
+                    <img src={System} alt='System images for all systems'/>
                     <h3>5</h3>
                     <small>Systems </small>
                 
                 </div>
                 <div className='app-left'>
     
-                    <img src={Website}/>
+                    <img src={Website} alt='Website  container'/>
                     <h3>15</h3>
                     <small>Live Websites</small>
                     
                 </div>
                 <div className='app-left'>
                     
-                    <img src={Android}/>
+                    <img src={Android} alt='android  container'/>
                     <h3>2</h3>
                     <small>Android applications</small>                   
                 </div>
@@ -75,7 +75,7 @@ export default ()=>{
                 </span>
                 <Link to={'/'}>Read More </Link>
                 </div>
-                <img src={Billing}/>
+                <img src={Billing} alt=' '/>
             </div>
             
             <h3 style={{textAlign:'center',width:'100%',padding:'1% 0px',color:'purple',margin:'5% 0px',float:'left'}}>Projects :Under development</h3>            
