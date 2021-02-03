@@ -25,19 +25,9 @@ export default ()=>{
                    
                 </div>
             </div>
-            <div className='featured-section'>
-                <img src={Featured} alt='Featured project Container'/>
-                <div className={' '}>
-                <small>Featured Project</small>
-                <h3>24Hour tax Managemet Platform</h3>
-                <p>This is both a installble and online web service where tax payers
-                    can create an account ,pay for the service and get automatic processing of 
-                    their yearly ,monthly or their custom timelines.
-                </p>
-                </div>
-            </div>
+           
 
-            <div className='project-types'>
+            <div className='project-types app-left app-full' style={{margin:'1% 0px'}}>
                 <div className='app-left'>
                     <img src={System} alt='System images for all systems'/>
                     <h3>5</h3>
@@ -59,13 +49,37 @@ export default ()=>{
                 </div>
             </div>
             
+            <div className='featured-section'>
+                <img src={Featured} alt='Featured project Container'/>
+                <div className={' '}>
+                <small>Featured Project</small>
+                <h3>24Hour tax Managemet Platform</h3>
+                <p>This is a tax management platform for both companies and individuals and its either used as a web service or an installed system.
+                </p>
+                <h5>Features</h5>
+                <ul>
+                    <li>Report generation</li>
+                    <li>Automatic tax Preparation</li>
+                    <li>Customizable timelines (Monthly,Quaterly,Yearly)</li>
+                </ul>
+                </div>
+            </div>
+
             <div className='projects'>
                 <div className={'container'}>
                 <small>SPOS</small>
                 <h3>Supermaket point of Sale</h3>
-                <p>This is both a installble Supermarker sales and inventory management platform,
-                    which has both online services and other addons that make it a viable product for current times.
+                <p>This is a supermarket management system. It is an installable software, where supermarket owners 
+                    get real time reports using its online web platform.
                 </p>
+                <h5>Features</h5>
+                <ul>
+                <li>Stock Management</li>
+                    <li>Payroll Management</li>
+                    <li>Report generation</li>
+                    <li>Dynamic user authorization and authentication</li>
+                    <li>Real-time Mpesa payment authentication</li>
+                </ul>
                 <span>
                     <div>ELECTRON JS</div>
                     <div>SQL</div>
