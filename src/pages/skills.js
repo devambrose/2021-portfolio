@@ -2,7 +2,7 @@ import React from "react";
 import LayoutClass from "../components/containers/layout/layout";
 import Ambrose from "../images/ambrose.png";
 export default ()=>(
-        <LayoutClass className='app-left app-full' title={"My Skills"}>
+        <LayoutClass id='skills' className='app-left app-full' title={"My Skills"}>
             <div className='app-left app-full skillslayout'>
                 <div class='app-tab-hidden app-left'>
                     <div className='' style={{background:'url('+Ambrose+')',

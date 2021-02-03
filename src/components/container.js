@@ -4,8 +4,10 @@ import Featured from "../images/24.png"
 import System from "../images/systems.png"
 import Website from "../images/website.png"
 import Android from "../images/android.png"
-//import Movie from "../images/movie.png"
+import Movie from "../images/muhia.png"
 import Billing from "../images/billing.png";
+import Back_image from "../images/landing.jpg";
+import Homer from "../images/tax_home.png";
 
 import { Link } from "gatsby"
 export default ()=>{
@@ -21,7 +23,7 @@ export default ()=>{
                 </span>
 
                 </div>
-                <div className='pc-level-section'>
+                <div className='pc-level-section' style={{background:'url('+Back_image+')',backgroundRepeat:'no-repeat',backgroundPosition:'center',backgroundSize:'cover'}}>
                    
                 </div>
             </div>
@@ -87,20 +89,46 @@ export default ()=>{
                     <div>REST API'S</div>
                     <div>GCP</div>
                 </span>
-                <Link to={'/'}>Read More </Link>
+                
                 </div>
-                <img src={Billing} alt=' '/>
+                <img src={Homer} alt=' '/>
+            </div>
+
+            <div className='projects'>
+                <div className={'container'}>
+                <small>Blog</small>
+                <h3>Muhia Waweru  Website [Blog]</h3>
+                <p>An online blog that allows the owner to post,respond to comments and run his youtube
+                    channel directly in the backend.
+                </p>
+                <h5>Features</h5>
+                <ul>
+                <li>Frontend Controls</li>
+                    <li>Social Media API integrations</li>
+                    <li>Real-time Social response</li>
+
+                </ul>
+                <span>
+                    <div>GATSBY JS</div>
+                    <div>PHP</div>
+                    <div>GCP</div>
+                    <div>REST API'S</div>
+                    <div>POSTGRESQL</div>
+                </span>
+                <Link to={'https://muhiawaweru.netlify.com/'}>URL </Link>
+                </div>
+                <img src={Movie} alt=' '/>
             </div>
             
             <h3 style={{textAlign:'center',width:'100%',padding:'1% 0px',color:'purple',margin:'5% 0px',float:'left'}}>Projects :Under development</h3>            
             
             <div className='development'>
-                <h5>#100projects100days</h5>
+            
                 {
                     [ 
-                        {name:'City-circuit',short:'Cyrtotrading application'},
+                        {name:'City-circuit',short:'Cryptocurrency trading application'},
                         {name:'Online Journal',short:'Simple online Diary'},
-                        {name:'Baby Shop Manager',short:'Managing my sisters baby shop application book-keeping & inventory'},
+                        {name:'Baby Shop Manager',short:'Shop Stock and Selling Application'},
                         {name:'Green Trader Shop',short :'Working on the idea'}
                 ].map( ({name,short},key)=>(
                     <div className='project-simple' key={key}>

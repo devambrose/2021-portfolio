@@ -24,12 +24,13 @@ export default ()=>{
             { !ishidden ?
             <div className='' style={{textAlign:'center',width:'100%',cursor:'pointer',padding:'1%',background:'lightgrey',float:'left',margin:'1% 0px',display:'grid',position:'relative',placeItems:'center'}}>
                 
-                 
-                <button className='app-left app-full' onKeyPress={()=>null} onClick={()=>setHidden(ishidden+1)} style={{margin:'0px'}} >LOAD MORE</button>
-                 
+              <div>
+              <button className='app-left app-full' onKeyPress={()=>null} onClick={()=>setHidden(ishidden+1)} style={{margin:'0px'}} >LOAD MORE</button>                 
+            
+            <i className='fas fa-chevron-down app-left long'></i>
+            <i className='fas fa-chevron-down app-left long' style={{position:'absolute',top:'45%'}}></i>
+            </div>     
                 
-                <i className='fas fa-chevron-down app-left'></i>
-                <i className='fas fa-chevron-down app-left' style={{position:'absolute',top:'45%'}}></i>
             </div>
             : <ExtraProjects/>}
         </LayoutClass>
