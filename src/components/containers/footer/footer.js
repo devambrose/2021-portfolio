@@ -9,9 +9,7 @@ export default ()=>(
        <a href="https://github.com/devambrose/"><img src={Github} alt='github link'/></a>
        <a href="https://www.linkedin.com/in/ambrose-mwangi/"><img src={Linkedin} alt='linkedin link'/></a>
        <a href="https://t.me/Ambuh"><img src={Tags} alt='Telegram connect'/></a>
-       <a href=""><img src={Twitter} alt='twitter link'/></a>
-      
-      
+       <a href="https://twiiter.com"><img src={Twitter} alt='twitter link'/></a>      
      </div>
       
   </div>

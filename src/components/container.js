@@ -1,11 +1,9 @@
-import React from "react"
-//import {TweenMax,power3} from "gsap";
+import React from "react";
 import Featured from "../images/24.png"
 import System from "../images/systems.png"
 import Website from "../images/website.png"
 import Android from "../images/android.png"
 import Movie from "../images/muhia.png"
-import Billing from "../images/billing.png";
 import Back_image from "../images/landing.jpg";
 import Homer from "../images/tax_home.png";
 

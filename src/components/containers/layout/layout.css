@@ -575,3 +575,6 @@ pre tt:after {
     font-size: 100%;
   }
 }
+#hire{
+ background-image:repeating-linear-gradient(157.5deg, white 0px, white 10px, transparent 10px,transparent 11px), repeating-linear-gradient(67.5deg, white 0px, white 10px, transparent 10px, transparent 11px), linear-gradient(90deg, #075014, #075014);
+}

@@ -1,8 +1,8 @@
 {
   "name": "devambrose-portfolio",
   "private": true,
-  "description": "A simple updated portfolio",
-  "version": "0.1.0",
+  "description": "A simple updated portfolio for 2021",
+  "version": "1.1.0",
   "author": "Ambuh Mwangi <ambuhmwangi.code@gmail.com>",
   "dependencies": {
     "gatsby": "^2.26.1",

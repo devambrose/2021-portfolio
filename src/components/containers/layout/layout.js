@@ -33,7 +33,6 @@ class LayoutClass extends React.Component{
     
   }
   render(){
-   console.log(this.props);
   return (
     <section className={(this.state.theme ? 'app-white' :'app-dark')+ " main-section"}>
       <Helmet>

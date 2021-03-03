@@ -72,7 +72,7 @@ function JobComponent(props){
                         <h4 style={{margin:0}} className='app-padding'>{job} </h4>
                         <h5 style={{margin:0,color:'#800080'}} className='app-padding'>{company}</h5>
                         <ul style={{padding:'0px 18px',}}>
-                            {responsibilities.map( res=><li>{res}</li> )}
+                            {responsibilities.map( (res,key)=><li id={key} >{res}</li> )}
                         </ul>
          </div>
     )
